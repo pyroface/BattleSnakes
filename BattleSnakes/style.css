@@ -1,0 +1,67 @@
+body {
+  background: #000;
+  text-align: center;
+  font-family: 'Bungee', cursive;
+}
+#xx{
+	margin-left:-380px;
+	margin-top:90px;
+}
+#tron { 
+  border: 1px solid #777;
+  outline: 1px solid #333;
+  outline-offset: 5px;
+	margin-left:-380px;
+	margin-top:90px;
+}
+.x{
+  margin-left:10px;
+  margin-right:10px;
+}
+#winCount{
+	margin-top:-10px;
+}
+.winContainer{
+	margin-left:50px;
+	margin-right:80px;
+}
+.players{
+	color:white;
+}
+#play-btn {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background: #000000aa;
+}
+
+#play-btn > button {
+  font-size: 2rem;
+  font-family: 'Bungee', cursive;
+  color: #fff;
+  border: 2px solid #fff;
+  background: none;
+  padding: 0px 85px;
+  cursor: pointer;
+	margin-top:20px;
+}
+#play-btn input{
+  cursor: pointer;
+}
+#zz{
+	float:center;
+	margin-top:200px;
+	margin-bottom:30px;
+}
+#zz span{
+	margin-right:10px;
+}
+
+.coolGradient{
+background: -webkit-linear-gradient(#75A4FF, #FF5050);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

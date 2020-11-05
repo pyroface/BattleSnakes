@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mastermind</title>
+  </head>
+
+<link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<div id="play-btn">
+	 
+	<div id="zz">
+		<div style="color:white; margin-bottom:-10px;">Speed select</div>
+	<input type="radio" name="speed" value="slow" /> <span class="players" style="color:green;">slow</span>
+	<input type="radio" name="speed" value="normal" checked="checked" /> <span class="players" style="color:yellow;">normal</span>
+ <input type="radio" name="speed" value="fast" /> <span class="players" style="color:red;">fast</span> 
+ <br/>
+	</div>
+
+	<div id="test" style="margin-top:-60px;"><br />
+		<div style="color:white; margin-bottom:-10px;">Player select</div>
+  	<input type="radio" name="players" value="3players"><span class="players">3 Players</span>
+  	<input type="radio" name="players" value="4players"><span class="players">4 Players</span>
+	</div>
+  <button id="press-play" onclick="run()">Play</button>
+</div>
+
+<h1 style="color:#fff;margin:5px 0 5px 0;padding:0px;">Battle Snakes</h1>
+<canvas id="tron" width="750" height="510" style="position: absolute; z-index:0;"></canvas>
+<canvas id="xx" width="750" height="510" style="position: absolute; z-index:1;"></canvas>
+
+<p style="color:#fff;margin:0;">
+  <span style="color:#75A4FF; " class="x">Player 1: WASD</span>
+  <span style="color:#FF5050;" class="x">Player 2: arrow keys</span>
+  <span style="color:yellow; display:none;"class="x" id="player3">Player 3: IJKL</span>
+  <span style="color:green; display:none;"class="x" id="player4">Player 4: numpad 5123</span>
+</p>
+<p id="winCount">
+	<span style="color:#75A4FF;" class="winContainer" id="1">Wins:<span class="wins">0</span> </span>
+  <span style="color:#FF5050;" class="winContainer" id="2">Wins:<span class="wins">0</span> </span>
+  <span style="color:yellow; display:none;" class="winContainer" id="3">Wins:<span class="wins">0</span> </span>
+  <span style="color:green; display:none;" class="winContainer" id="4">Wins:<span class="wins">0</span> </span>
+</p>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
